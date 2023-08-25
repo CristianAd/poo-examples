@@ -69,3 +69,29 @@ entidad.addLeel({dificulty: "medio"})
 
 console.log(entidad.level())
 
+// HERENCIA
+
+
+class Superman {
+    constructor(nombre, accesorio){
+        this.nombre = nombre
+    }
+}
+
+class Accesorio extends Superman {
+    
+    constructor(){
+        super();
+        this.version = ""
+    }
+}
+
+
+const personaje = new Superman("klark")
+
+console.log(personaje)
+
+const personajeCompleto = new Accesorio
+console.log(personajeCompleto)
+
+
