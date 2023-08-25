@@ -95,3 +95,46 @@ const personajeCompleto = new Accesorio
 console.log(personajeCompleto)
 
 
+// 
+
+class DatosPersonales{
+    constructor(nombre, apellido){
+        this.nombre =nombre
+        this.apellido = apellido
+    }
+}
+
+
+class NivelJugador extends DatosPersonales{
+    constructor(nivel, puntos){
+        super();
+        this.nivel = nivel
+        this.puntos = puntos
+    }
+}
+
+
+const  datosCompletos = new NivelJugador
+
+console.log(datosCompletos)
+
+// POLIMORFISMO PARAMETRICO
+
+function cuerpoObjeto() {
+    this.itemsss = []
+
+    this.funcionalidad = function (params) {
+        this.itemsss.push(params)
+    }
+}
+
+const comportamiento1 = new cuerpoObjeto
+comportamiento1.funcionalidad("soyTexto")
+
+console.log(comportamiento1)
+
+const comportamiento2 = new cuerpoObjeto
+comportamiento2.funcionalidad(12049)
+
+console.log(comportamiento2)
+
