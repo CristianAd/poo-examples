@@ -138,3 +138,28 @@ comportamiento2.funcionalidad(12049)
 
 console.log(comportamiento2)
 
+// SUBTYPE POLIMORFISM
+
+class Persona {
+    constructor(name, lastName){
+        this.name = name
+        this.lastName = lastName
+    }
+}
+
+
+class Career extends Persona{
+    constructor(language, name, lastName){
+        super(name, lastName)
+        this.language = language
+    }
+}
+
+
+const ejemplo1 = new Person ("Alex", "Rey")
+console.log(ejemplo1)
+
+
+const ejemplo2 = new Career("Javascript", "Cris", "Newton")
+console.log(ejemplo2)
+
